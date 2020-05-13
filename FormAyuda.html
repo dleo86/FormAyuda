@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form ayuda con CSS y JavaScript</title>
+<link rel="stylesheet" href="FormAyuda.css">
+<script type="text/javascript" src="FormAyuda.js"></script>
+</head>
+<body>
+<p style="font:normal 12px/15px Arial;">Presione Tab o haga click en los campos para revelar la ayuda.</p>
+ 
+<dl>
+    <dt>
+        <label for="firstname">Primer nombre:</label>
+    </dt>
+    <dd>
+        <input
+            name="firstname"
+            id="firstname"
+            type="text" />
+        <span class="hint">Este es el nombre que tu madre te puso cuando eras pequeño.<span class="hint-pointer"> </span></span>
+    </dd>
+    <dt>
+        <label for="lastname">Apellido:</label>
+    </dt>
+    <dd>
+        <input
+            name="lastname"
+            id="lastname"
+            type="text" />
+        <span class="hint">Este es el nombre con el que tu sergeant te llamaba cuando ibas al bootcamp. <span class="hint-pointer"> </span></span>
+    </dd>
+    <dt>
+        <label for="email">Email:</label>
+    </dt>
+    <dd>
+        <input
+            name="email"
+            id="email"
+            type="text" />
+        <span class="hint">La cosa con el simbolo @ y el punto com al final.<span class="hint-pointer"> </span></span>
+    </dd>
+    <dt><label for="year">Cumpleaños:</label></dt>
+    <dd>
+        <select id="year" name="year">
+            <option value="">AAAA</option>
+            <option value="1066">1066</option>
+            <option value="1492">1492</option>
+            <option value="1776">1776</option>
+            <option value="1812">1812</option>
+            <option value="1917">1917</option>
+            <option value="1942">1942</option>
+            <option value="1999">1999</option>
+        </select>
+        <span class="hint">Elige un anio famoso para tu nacimiento.<span class="hint-pointer"> </span></span>
+    </dd>
+    <dt>
+        <label for="username">Usuario:</label>
+    </dt>
+    <dd>
+        <input
+            name="username"
+            id="username"
+            type="text" />
+        <span class="hint">Entre 4-12 caracteres.<span class="hint-pointer"> </span></span>
+    </dd>
+    <dt>
+        <label for="password">Password:</label>
+    </dt>
+    <dd>
+        <input
+            name="password"
+            id="password"
+            type="password" />
+        <span class="hint">Entre 5-13 caracteres, pero no 7. Jamas el 7.<span class="hint-pointer"> </span></span>
+    </dd>
+    <dt class="button"> </dt>
+    <dd class="button">
+        <input
+            type="submit"
+            class="button"
+            value="Submit" />
+    </dd>
+</dl>
+ 
+</body>
+</html>
